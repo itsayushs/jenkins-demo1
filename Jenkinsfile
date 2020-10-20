@@ -8,12 +8,12 @@ pipeline {
         }
         stage('test-run') {
             steps {
-                sh 'python3 simple_api.py'
+                sh 'python3.8 simple_api.py'
             }
         }
 	    stage('run-unittest') {
             steps {
-		        sh 'pytest test_test1.py'
+		        sh ' python3.8 -m pytest test_test1.py'
             }
         }
     }
