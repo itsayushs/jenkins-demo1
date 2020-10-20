@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('install-deps') {
             steps {
-                sh 'pip install -r requirements.txt'
+                sh 'pip3.8 install -r requirements.txt'
             }
         }
         stage('test-run') {
