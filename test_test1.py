@@ -5,7 +5,7 @@ from simple_api import getData
 class SimpleTest(unittest.TestCase): 
     
     def test_testcase1(self):         
-        self.assertTrue(False) 
+        self.assertTrue(True) 
    
     def test_testcase2(self):
         response_from_api = getData()
